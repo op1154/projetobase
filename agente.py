@@ -16,10 +16,10 @@ if not api_key.startswith("sk-"):
 
 qual_produto = "TV de 55 polegadas"
 ambiente = "Sala de estar de 6 metros quadrados"
-fabricante = "Samsung"
+modelo = "u8600f"
 
 prompt = f"""Crie um escritivo de suporte para o produto {qual_produto}, para o uso em {ambiente}
-            preferindo por ser da {fabricante} e descreva as melhores características."""
+            detalhando o modelo {modelo} e descreva as melhores características."""
 
 cliente = OpenAI(api_key=api_key)
 response = cliente.chat.completions.create(
